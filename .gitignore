@@ -1,0 +1,3 @@
+vendor
+.phpunit.result.cache
+{% if test_run_logger %}test-run-logs.txt{% endif %}
