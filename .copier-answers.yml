@@ -1,4 +1,5 @@
-_commit: 0.1.1
+_commit: 0.3.0
 _src_path: gh:selrahcd/copier-php-kata
 kata_name: FizzBuzz
+tell_about_test_run_logger: false
 test_run_logger: true

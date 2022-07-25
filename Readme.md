@@ -1,13 +1,5 @@
 # FizzBuzz
 
-## Getting started
-
-Run `composer install` to get dependencies.
-
-## Run tests
-
-You can run test with PhpUnit using `./vendor/bin/phpunit`.
-
 ## Instructions
 
 FizzBuzz is a simple number game in which you count, but replace certain numbers with the words "Fizz" and/or "Buzz", adhering to certain rules.
@@ -39,6 +31,14 @@ FizzBuzz is a simple number game in which you count, but replace certain numbers
     98
     Fizz
     Buzz
+
+## Getting started
+
+Run `composer install` to get dependencies.
+
+## Run tests
+
+You can run tests with PhpUnit using `./vendor/bin/phpunit`.
 
 ## Informations
 
