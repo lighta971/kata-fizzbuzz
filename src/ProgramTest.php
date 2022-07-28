@@ -10,8 +10,20 @@ class ProgramTest extends TestCase {
         $program = new Program();
 
         $actual = $program->fizzBuzz();
-        $expected = range(1, 100);
 
-        $this->assertEquals($expected, $actual);
+        $this->assertEquals(1, $actual[0]);
+        $this->assertEquals(100, $actual[99]);
+        $this->assertCount(100, $actual);
     }
+
+    public function testItReturnsFizzInsteadOfDivisibleByThree()
+    {
+        $program = new Program();
+        $actual = $program->fizzBuzz();
+
+        $this->assertEquals('Fizz', $actual[2]);
+        $this->assertEquals('Fizz', $actual[5]);
+    }
+
+
 }
