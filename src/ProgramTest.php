@@ -24,6 +24,5 @@ class ProgramTest extends TestCase {
         $this->assertEquals('Fizz', $actual[2]);
         $this->assertEquals('Fizz', $actual[5]);
     }
-
-
+    
 }
