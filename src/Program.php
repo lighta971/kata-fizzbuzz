@@ -9,12 +9,20 @@ class Program {
         $hundredList = range(1, 100);
 
         $hundredList = array_map(function ($number) {
+            $newValue = null;
+
             if ($number % 3 === 0) {
-                $number = "Fizz";
+                $newValue .= "Fizz";
             }
-            else if ($number % 5 === 0) {
-                $number = "Buzz";
+
+            if ($number % 5 === 0) {
+                $newValue .= "Buzz";
             }
+
+            if ($newValue) {
+                $number = $newValue;
+            }
+
             return $number;
         }, $hundredList);
 
