@@ -12,9 +12,13 @@ class Program {
             if ($number % 3 === 0) {
                 $number = "Fizz";
             }
+            else if ($number % 5 === 0) {
+                $number = "Buzz";
+            }
             return $number;
         }, $hundredList);
 
         return $hundredList;
     }
+
 }

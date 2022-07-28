@@ -12,7 +12,7 @@ class ProgramTest extends TestCase {
         $actual = $program->fizzBuzz();
 
         $this->assertEquals(1, $actual[0]);
-        $this->assertEquals(100, $actual[99]);
+        $this->assertEquals('Buzz', $actual[99]);
         $this->assertCount(100, $actual);
     }
 
@@ -23,6 +23,15 @@ class ProgramTest extends TestCase {
 
         $this->assertEquals('Fizz', $actual[2]);
         $this->assertEquals('Fizz', $actual[5]);
+    }
+
+    public function testItReturnsBuzzInsteadOfDivisibleByFive()
+    {
+        $program = new Program();
+        $actual = $program->fizzBuzz();
+
+        $this->assertEquals('Buzz', $actual[4]);
+        $this->assertEquals('Buzz', $actual[9]);
     }
     
 }
