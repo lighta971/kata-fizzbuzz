@@ -1,3 +1,5 @@
 vendor
 .phpunit.result.cache
-{% if test_run_logger %}test-run-logs.txt{% endif %}
+{% if test_run_logger %}test-run-logs.txt{% endif %}.idea
+.idea
+test-run-logs.txt
