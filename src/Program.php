@@ -4,7 +4,7 @@ namespace FizzBuzz;
 
 class Program {
 
-    public function fizzBuzz()
+    public function fizzBuzz(): array
     {
         return [1];
     }

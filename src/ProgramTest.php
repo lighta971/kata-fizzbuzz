@@ -14,4 +14,14 @@ class ProgramTest extends TestCase {
 
         $this->assertEquals($expected, $actual);
     }
+
+    public function testItPrint1to100()
+    {
+        $program = new Program();
+
+        $actual = $program->fizzBuzz();
+        $expected = range(1, 100);
+
+        $this->assertEquals($expected, $actual);
+    }
 }
