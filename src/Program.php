@@ -6,6 +6,6 @@ class Program {
 
     public function fizzBuzz()
     {
-
+        return [1];
     }
 }
