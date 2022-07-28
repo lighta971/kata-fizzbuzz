@@ -6,6 +6,6 @@ class Program {
 
     public function fizzBuzz(): array
     {
-        return [1];
+        return range(1, 100);
     }
 }
